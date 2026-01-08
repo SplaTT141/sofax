@@ -1,0 +1,76 @@
+.row4-padding{
+padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+padding-bottom: 0;
+
+}
+.Row4h1{
+    font-size: 3.8rem;
+    width: 100%
+}
+.Row4divh1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.paddingui{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.hover-darken {
+    transition: all 0.5s;
+    opacity: 1; 
+  }
+  .hover-darken:hover {
+    filter: brightness(35%); 
+  }
+
+@media(min-width:320px){
+    .baltas{
+        font-size: 0.7rem;
+}
+.baltas:hover{
+    font-size: 0.7rem;
+
+}
+}
+
+
+
+@media(max-width:350px){
+    .Row4h1{
+        font-size: 2.2rem;
+        border: 0.5px solid black;
+    }
+   
+}
+@media(min-width:992px){
+    .Row4divh1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .h1kaire{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .baltas{
+        font-size: 0.8rem}
+    .baltas:hover{
+        font-size: 0.8rem;
+    }
+}
+@media(min-width:1200px){
+    .row4button{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

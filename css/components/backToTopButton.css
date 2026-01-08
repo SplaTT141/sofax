@@ -1,0 +1,27 @@
+.backtotop
+{
+   border: none;
+   border-radius: 50%;
+   position: fixed;
+   top: 1;
+   left: 1;
+   right: 30px;
+   bottom: 30px;
+   z-index: 2;
+   cursor: pointer;
+   display: none;
+    
+}
+.backtotop i
+{
+    display: flex;
+    color: #0e0e0e;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    border: 1px solid gray;
+}

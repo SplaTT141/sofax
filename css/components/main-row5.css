@@ -1,0 +1,139 @@
+@font-face {
+  font-family: inter;
+  src: url(../../fonts/inerFontFam/Inter/static/Inter_18pt-Bold.ttf);
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../../fonts/inerFontFam/Inter/static/Inter_28pt-Medium.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.container-mr5
+{   
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9FA;
+    padding: 8rem;
+    font-size: 1.2rem;
+}
+
+.mr5-row1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mr5-title
+{
+    font-size:3.75rem ;
+    font-weight: bolder;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-family: inter;
+
+}
+
+
+.mr5testi-card
+{
+    border: solid 1px #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: inter;
+}
+
+.mr5-comment
+{
+    padding: 1rem 0rem 1rem;
+    position: relative;
+    color: #3C3C61;
+    
+}
+
+.mr5-comment::after
+{
+    
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: #DBDBDB;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    
+}
+
+.mr5-bottomrow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    
+}
+
+.mr5-stars i
+{
+ color: #FFC900;
+ font-size: 1.5rem;
+}
+
+.mr5-name
+{
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.mr5-position
+{
+    color: #3C3C61;
+}
+
+
+@media (max-width: 768px) {
+  .mr5-title{
+    font-size: 2.25rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .mr5-title{
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .mr5-title{
+    font-size: 3.75rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mr5-title{
+    font-size: 4.69rem;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+

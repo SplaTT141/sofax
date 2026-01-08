@@ -1,0 +1,20 @@
+@import "../footer.css";
+
+.footer-top {
+  position: relative;
+}
+
+.footer-about h1 {
+  max-width: 800px;
+}
+
+.spinning-star {
+  position: absolute;
+  left: 600px;
+}
+
+.left-img {
+  position: absolute;
+  top: -80px;
+  left: -275px;
+}

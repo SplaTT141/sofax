@@ -1,0 +1,142 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-menu-trigger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.blackout.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .mobile-menu-trigger {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 320px;
+  background-color: #fff;
+  z-index: 3;
+  font-size: 1.1rem;
+
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.menu-header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-title {
+  height: 100%;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.menu-return.fa,
+.menu-close.fa,
+.menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-menu-links {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mobile-menu-links a {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 1rem;
+}
+
+.mobile-menu-links .dropdown .subMenu-angle {
+  rotate: -90deg;
+}
+
+.mobile-menu-links .dropdown .subMenu-angle:hover i {
+  rotate: -90deg;
+}
+
+.mobile-menu-links .dropdown a {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.mobile-menu-links .top-angle {
+  display: none;
+}
+
+.mobile-navbar .dropdown .dropdown-list {
+  display: none;
+}
+
+.mobile-navbar .dropdown .dropdown-list.active {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+}
+
+.mobile-navbar .dropdown-list {
+  margin-top: 3rem;
+  box-shadow: none;
+}
+
+.mobile-navbar .dropdown-list li:first-child {
+  margin-top: 0;
+}
+
+.mobile-navbar .sub-dropdown {
+  margin-left: 0;
+  border-bottom: 1px solid #e5e5e5;
+  height: 3rem;
+}
+
+.mobile-navbar .sub-dropdown .subMenu-angle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  rotate: 0deg;
+}
+
+.mobile-navbar .sub-dropdown .sub-dropdown-list {
+  display: none;
+}
