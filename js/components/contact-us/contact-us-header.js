@@ -1,11 +1,10 @@
-
-import { contactHeaderData} from "../../data/contact-us-header-data.js";
+import { headerData } from "../../data/headerData.js";
 
 export function contactUsheader() {
 
     let navbarHTML = ``;
 
-    for (const item of contactHeaderData) {
+    for (const item of headerData) {
         if (item.subMenu) {
 
             let subMenuHTML = '';

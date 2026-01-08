@@ -77,44 +77,4 @@ export function header() {
     document
         .getElementById('app')
         .insertAdjacentHTML('beforeend', HTML);
-
-    const menuTriggerDOM = document.querySelector('.mobile-menu-trigger');
-    const blackoutDOM = document.querySelector('.blackout');
-    const mobileMenuDOM = document.querySelector('.mobile-menu');
-    const closeBtnDOM = document.querySelector('.menu-close');
-    const mobileDropdownDOM = document.querySelectorAll('.mobile-menu .dropdown');
-    const mobileDropdownNameDOM = document.querySelectorAll('.mobile-menu-links .dropdown > a')
-
-    const mobileMenuTitle = document.querySelector('.menu-title')
-
-    menuTriggerDOM.addEventListener('click', () => {
-        blackoutDOM.classList.add('active')
-        mobileMenuDOM.classList.add('active')
-    });
-
-    blackoutDOM.addEventListener('click', () => {
-        blackoutDOM.classList.remove('active')
-        mobileMenuDOM.classList.remove('active')
-    })
-
-    closeBtnDOM.addEventListener('click', () => {
-        blackoutDOM.classList.remove('active')
-        mobileMenuDOM.classList.remove('active')
-    })
-
-
-    for (const list of mobileDropdownDOM) {
-        list.addEventListener('click', () => {
-            const currentDropdownList = list.querySelector('.mobile-menu .dropdown-list');
-            if (currentDropdownList) {
-                currentDropdownList.classList.add('active');
-
-                for (const name of mobileDropdownNameDOM) {
-                    mobileMenuTitle.textContent = name.textContent;
-                }
-            }
-
-        });
-
-    }
 }

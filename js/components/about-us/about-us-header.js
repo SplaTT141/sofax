@@ -1,10 +1,10 @@
-import { aboutHeaderData} from "../../data/abaut-us-header-data.js";
+import { headerData } from "../../data/headerData.js";
 
 export function aboutUsHeader() {
 
   let navbarHTML = ``;
 
-  for (const item of aboutHeaderData) {
+  for (const item of headerData) {
     if (item.subMenu) {
 
       let subMenuHTML = '';
