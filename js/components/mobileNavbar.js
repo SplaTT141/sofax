@@ -38,15 +38,16 @@ export function mobileNavbar() {
 
     for (const list of mobileDropdownDOM) {
         list.addEventListener('click', () => {
-            const currentDropdownList = list.querySelector('.mobile-menu .dropdown-list');
+            const currentDropdownList = list.querySelector('.dropdown-list');
+            const dropdownName = list.querySelector('a');
+
             if (currentDropdownList) {
                 currentDropdownList.classList.add('active');
+            }
 
-                for (const name of mobileDropdownNameDOM) {
-                    mobileMenuTitle.textContent = name.textContent;
-                }
+            if (dropdownName) {
+                mobileMenuTitle.textContent = dropdownName.textContent;
             }
         });
-
     }
 }
