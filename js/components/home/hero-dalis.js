@@ -2,10 +2,8 @@ export function heroDalis() {
     const HTML = ` <section class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-7 left-div">
-                <h1 class=" title"> 
-                    <div>Empower your to</div>
-                    <div>business journey</div>
-                    <div>with IT expertise</div>
+                <h1 class="title"> 
+                    Empower your to business journey with IT expertise
                 </h1>
                 <p class="sub-title">
                  IT expertise is crucial for the growth and sustainability of any business. Here’s how integrating robust IT solutions can empower your business journey:
@@ -24,7 +22,7 @@ export function heroDalis() {
              </div>
         </div>
     </section> `;
- 
+
     document
         .getElementById('app')
         .insertAdjacentHTML('beforeend', HTML);
