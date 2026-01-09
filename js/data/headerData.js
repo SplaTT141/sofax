@@ -1,11 +1,11 @@
 export const headerData = [
     { href: '/', text: 'Home' },
-    { href: './about.html', text: 'About us' },
-    { href: './contact.html', text: 'Contact Us' },
+    { href: '/about.html', text: 'About us' },
+    { href: '/contact.html', text: 'Contact Us' },
     {
         href: '#', text: 'Pages', subMenu: [
             {
-                href: './about.html',
+                href: '/about.html',
                 text: 'About Us',
             },
             {
