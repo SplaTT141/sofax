@@ -1,13 +1,13 @@
 export function contactUsFooter() {
-    
-    const HTML = `
+
+  const HTML = `
     <footer class="container">
 <div class="row">
 <div class="footer-top">
   <div class="footer-about">
     <h1>Let's embark on a <br> digital journey together!</h1>
-    <img class="spinning-star" src="../img/shape1.png" alt="logo" />
-    <img class="left-img" src="../img/shape3.png" alt="left img" />
+    <img class="spinning-star" src="img/shape1.png" alt="logo" />
+    <img class="left-img" src="img/shape3.png" alt="left img" />
   </div>
   <div class="arrow-up">
     <a href="#">&#8594;</a>
@@ -15,11 +15,11 @@ export function contactUsFooter() {
 </div>
 <div class="footer-bottom">
   <div class="socials col-md-12 col-xl-4">
-    <img src="../img/SofaxLogo.webp" alt="logo" />
+    <img src="img/SofaxLogo.webp" alt="logo" />
     <p>Sofax has many plans for the future to work with great clients and continue to work with agencies.</p>
     <div class="social-links">
       <a href="#" target="_blank">
-       <img src="../img/x.png" alt="X">
+       <img src="img/x.png" alt="X">
       </a>
       <a href="#" target="_blank" class="fa fa-facebook"></a>
       <a href="#" target="_blank" class="fa fa-instagram"></a>
@@ -58,9 +58,9 @@ export function contactUsFooter() {
 </div>
 </footer>`
 
-document
+  document
 
-.getElementById('app')
+    .getElementById('app')
 
-.insertAdjacentHTML('beforeend', HTML);
+    .insertAdjacentHTML('beforeend', HTML);
 }

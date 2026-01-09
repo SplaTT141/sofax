@@ -1,33 +1,36 @@
-export function aboutUsMainRow1 (){
+export function aboutUsMainRow1() {
 
-    const data=[
-        {title:'50k',
-        desc:'Happy Clients'
-        },
-        {title:'78k+',
-        desc:'Project Completed'
-        },
-        {title:'100%',
-        desc:'Client Satisfaction'
-        }];
+  const data = [
+    {
+      title: '50k',
+      desc: 'Happy Clients'
+    },
+    {
+      title: '78k+',
+      desc: 'Project Completed'
+    },
+    {
+      title: '100%',
+      desc: 'Client Satisfaction'
+    }];
 
-        let HTML1='';
+  let HTML1 = '';
 
-        for (const item of data){
-            HTML1+=`<div class ="start-item">
+  for (const item of data) {
+    HTML1 += `<div class ="start-item">
                       <h3 class ="about-us-stats">${item.title}</h3>
                       <p class = "about-us-stats-desc">${item.desc}</p>
                       </div>
                       `;
-        }
+  }
 
-    const HTML = `<section>
+  const HTML = `<section>
     <div class="container mainRow1">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="abt-us-left-div">
-            <img class="abt-row1-img" src="../img/aboutthumb.png" alt="aboutthumb">
-            <img class="shape" src="../img/shape2.png" alt="leftTopShape">
+            <img class="abt-row1-img" src="img/aboutthumb.png" alt="aboutthumb">
+            <img class="shape" src="img/shape2.png" alt="leftTopShape">
             </div>
         </div>
       
@@ -51,7 +54,7 @@ export function aboutUsMainRow1 (){
     </section>
 `;
 
-    document
-        .getElementById('app')
-        .insertAdjacentHTML('beforeend', HTML);
+  document
+    .getElementById('app')
+    .insertAdjacentHTML('beforeend', HTML);
 }

@@ -1,19 +1,19 @@
 import { aboutUsMainData } from "../../data/about-us-MainData.js"
 
-export function aboutUsMain(){
-let HTML1=''
-for(const item of aboutUsMainData){
+export function aboutUsMain() {
+    let HTML1 = ''
+    for (const item of aboutUsMainData) {
 
-    HTML1+=`
+        HTML1 += `
     <div class="col-12  col-lg-4 col-xl-4  aboutUsCard">
-    <img src="../img/${item.img}" alt="${item.imgAlt}">
+    <img src="img/${item.img}" alt="${item.imgAlt}">
     <h1>${item.h1}</h1>
     <p>${item.comment}</p>
     </div>
     `
-};
+    };
 
- const HTML=`
+    const HTML = `
  <div class="container">
 
  <div class="row">
@@ -27,9 +27,9 @@ for(const item of aboutUsMainData){
 </div>
 
                         <div class="col-12 forrotaterelative">
-                        <img class="AboutUsMainimg" src="../img/AboutUs-Main.png" alt="Main_picture">
+                        <img class="AboutUsMainimg" src="img/AboutUs-Main.png" alt="Main_picture">
                         <div>
-                        <img src="../img/aboutUsMain_rotate.png" alt="rotating pic" class="imagerotate">
+                        <img src="img/aboutUsMain_rotate.png" alt="rotating pic" class="imagerotate">
                         </div>
 
  <div class=" ">
@@ -44,8 +44,8 @@ for(const item of aboutUsMainData){
  `
 
     document
-    .getElementById('app')
-    .insertAdjacentHTML('beforeend',HTML)
+        .getElementById('app')
+        .insertAdjacentHTML('beforeend', HTML)
 }
 
 
