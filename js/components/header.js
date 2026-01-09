@@ -37,7 +37,7 @@ export function header() {
                 <div class="dropdown-list"><i class="top-angle fa fa-caret-up"></i><ul>${subMenuHTML}</ul></div>
             </div>`;
         } else {
-            navbarHTML += `<div class="dropdown"><a href="${item.href}">${item.text}</a></div>`;
+            navbarHTML += `<div class="dropdown underline"><a href="${item.href}">${item.text}</a></div>`;
         }
     }
 
