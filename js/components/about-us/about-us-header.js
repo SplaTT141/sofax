@@ -48,7 +48,7 @@ export function aboutUsHeader() {
             <header>
                 <div class="col-10 m-1 headeris">
                     <div>
-                        <a href = "/"><img class="logo" src="../../img/logo-white.svg" alt="logo-white" ></a>
+                        <a href = "/"><img class="logo" src="img/logo-white.svg" alt="logo-white" ></a>
                     </div>
                     <nav class="navbar">
                         <div class="main-navbar">
