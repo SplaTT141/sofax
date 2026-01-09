@@ -37,7 +37,7 @@ export function aboutUsHeader() {
                 <div class="dropdown-list"><i class="top-angle fa fa-caret-up"></i><ul>${subMenuHTML}</ul></div>
             </div>`;
     } else {
-      navbarHTML += `<div class="dropdown"><a href="${item.href}">${item.text}</a></div>`;
+      navbarHTML += `<div class="dropdown underline"><a href="${item.href}">${item.text}</a></div>`;
     }
   }
 
@@ -52,11 +52,25 @@ export function aboutUsHeader() {
                     </div>
                     <nav class="navbar">
                         <div class="main-navbar">
-                       ${navbarHTML}
+                        ${navbarHTML}
                         </div>
                     </nav>
-                    <button class="pink baltas none480px"> Get started</button>
-                </div>
+                    <div class="mobile-navbar">
+                        <div class="mobile-menu">
+                            <div class="menu-header">
+                                <i class="menu-return fa fa-angle-left"></i>
+                                <span class="menu-title"></span>
+                                <i class="menu-close fa fa-times"></i>
+                            </div>
+                            <div class="mobile-menu-links">
+                                ${navbarHTML}
+                            </div>
+                        </div>
+                        <div class="blackout"></div>
+                            <button class="pink baltas none480px"> Get started</button>
+                            <span class="mobile-menu-trigger fa fa-bars" style="color:#fff;"></span>
+                        </div>
+                    </div>
             </header>
         </div>
     </div>

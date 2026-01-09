@@ -76,6 +76,10 @@ a {
   grid-template-columns: 1fr;
 }
 
+.mobile-navbar .dropdown a {
+  color: black;
+}
+
 .mobile-menu-links a {
   display: flex;
   align-items: center;
@@ -153,8 +157,12 @@ a {
   width: 320px;
 }
 
+.mobile-navbar .sub-dropdown-list ul {
+  border-left: 1px solid black;
+}
 .mobile-navbar .sub-dropdown-list li {
   margin-left: 0;
+  padding: 0;
 }
 
 .mobile-menu .underline a::after {

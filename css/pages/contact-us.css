@@ -4,6 +4,7 @@
 
 /*components*/
 @import "../components/about-us/about-us-header.css";
+@import "../components/mobile-navbar.css";
 @import "../components/about-us/about-us-footer.css";
 @import "../components/contact-us/contact-us-map.css";
 @import "../components/contact-us/contact-us-main.css";

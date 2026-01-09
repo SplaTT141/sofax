@@ -1,0 +1,29 @@
+.dropdown.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #fff;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.dropdown.underline:hover::after {
+  width: 100%;
+}
+
+.sub-dropdown.underline a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: black;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.sub-dropdown.underline a:hover::after {
+  width: 100%;
+}

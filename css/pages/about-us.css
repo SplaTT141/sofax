@@ -5,11 +5,11 @@
 /*components*/
 
 @import "../components/about-us/about-us-header.css";
+@import "../components/mobile-navbar.css";
 @import "../components/about-us/aboutUsMain.css";
 @import "../components/about-us/about-us-main-row-1.css";
 @import "../components/about-us/about-us-main-row2.css";
 @import "../components/about-us/about-us-row3.css";
 @import "../components/about-us/about-us-footer.css";
-
 
 /* CUSTOM STYLE FOR THIS PAGE GOES BELOW THIS COMMENT */

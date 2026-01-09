@@ -4,8 +4,6 @@ export function mobileNavbar() {
     const mobileMenuDOM = document.querySelector('.mobile-menu');
     const closeBtnDOM = document.querySelector('.menu-close');
     const mobileDropdownDOM = document.querySelectorAll('.mobile-menu .dropdown');
-    const mobileDropdownNameDOM = document.querySelectorAll('.mobile-menu-links .dropdown > a');
-
 
     const mobileMenuTitle = document.querySelector('.menu-title')
 
