@@ -9,7 +9,7 @@ export const headerData = [
                 text: 'About Us',
             },
             {
-                href: '/contact.html',
+                href: 'contact.html',
                 text: 'Contact Us',
             },
             {
