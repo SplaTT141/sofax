@@ -1,5 +1,5 @@
 export const headerData = [
-    { href: '/', text: 'Home' },
+    { href: '/sofax', text: 'Home' },
     { href: 'about.html', text: 'About us' },
     { href: 'contact.html', text: 'Contact Us' },
     {
