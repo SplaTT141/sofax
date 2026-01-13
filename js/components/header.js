@@ -47,7 +47,7 @@ export function header() {
             <header>
                 <div class="col-10 m-1 headeris">
                     <div>
-                        <a href = "/"><img class="logo" src="./img/SofaxLogo.webp" alt="logo" ></a>
+                        <a href = "index.html"><img class="logo" src="./img/SofaxLogo.webp" alt="logo" ></a>
                     </div>
                     <nav class="navbar">
                         <div class="main-navbar">
